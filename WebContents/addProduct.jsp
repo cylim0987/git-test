@@ -81,10 +81,8 @@
               while(rs.next()){
             	  out.print("<option value='"+rs.getString(1)+"'>"+rs.getString(2)+"</option>");
               }
-           %>
-         </select>
-       </div>
-   </div>
+           %>         </select>
+       </div>   </div>
    
    <div class="form-group row">
        <label class="col-sm-2"><fmt:message key="unitsInStock"/></label>
