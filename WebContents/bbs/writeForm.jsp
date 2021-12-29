@@ -14,7 +14,7 @@
 </div>
 <div class="container">
    <form name="newWrite" action="./BbsWriteAction.go"
-      class="form-horizontal" 
+      class="form-horizontal"
       method="post" 
       onsubmit="return checkForm()">
       <input name="id" type="hidden" class="form-control" value="${sessionId}">
