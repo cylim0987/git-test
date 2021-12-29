@@ -61,20 +61,26 @@ function confirmDelete(num,pageNum,items,text){
     <div class="form-group row">
         <div class="col-sm-offset-2 col-sm-10">
             <c:set var="userId" value="${board.id}" />
-            <c:if test="${sessionId==userId}"><!-- 작성자와 로그인 아이디가 같은 경우 버튼 보이기  -->
+            <c:if test="${sessionId==userId}"><!-- 작성자와 로그인 아이디가 같은 경우 버튼 보이기, admin이면 버튼 보이기.?  -->
               <p>
 
         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">삭제
         </button>
              <input type="submit" class="btn btn-success" value="수정">
             </c:if>
+            
+                <c:if test="${sessionId==admin}"><!-- 작성자와 로그인 아이디가 같은 경우 버튼 보이기, admin이면 버튼 보이기.?  -->
+              <p>
+
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">삭제
+        </button>
+             <input type="submit" class="btn btn-success" value="수정">
+            </c:if>
+            
+            
+      
             <a href="./BoardListAction.do?pageNum=${page}&items=${items}&text=${text}" class="btn btn-primary">목록</a>
         </div>
-   
-    <c:if test="${sessionId=='admin'}"> 	  
- 		 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">삭제
-    </c:if>
-   
     </div>
     </form>
     <hr>
