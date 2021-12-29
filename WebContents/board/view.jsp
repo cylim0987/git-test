@@ -70,6 +70,11 @@ function confirmDelete(num,pageNum,items,text){
             </c:if>
             <a href="./BoardListAction.do?pageNum=${page}&items=${items}&text=${text}" class="btn btn-primary">목록</a>
         </div>
+   
+    <c:if test="${sessionId=='admin'}"> 	  
+ 		 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">삭제
+    </c:if>
+   
     </div>
     </form>
     <hr>

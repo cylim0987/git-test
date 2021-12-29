@@ -39,7 +39,7 @@ public ProductRepository() {
 	tablet.setCondition("Old");
 	tablet.setFilename("P1236.png");
 	
-	listOfProducts.add(phone); 
+	listOfProducts.add(phone);
 	listOfProducts.add(notebook); 
 	listOfProducts.add(tablet);
 }

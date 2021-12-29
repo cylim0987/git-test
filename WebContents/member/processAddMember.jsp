@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 <%
+
 	/* 문자셋 설정 */
   request.setCharacterEncoding("UTF-8"); 
     /* 파라미터 받기 */
