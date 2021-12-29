@@ -69,7 +69,7 @@ function confirmDelete(num,pageNum,items,text){
              <input type="submit" class="btn btn-success" value="수정">
             </c:if>
             
-                <c:if test="${sessionId==admin}"><!-- 작성자와 로그인 아이디가 같은 경우 버튼 보이기, admin이면 버튼 보이기.?  -->
+                <c:if test="${sessionId==admin}"><!-- 작성자와 로그인 아이디가 같은 경우 버튼 보이기, admin이면 버튼 보이기.????  -->
               <p>
 
         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">삭제
