@@ -225,9 +225,7 @@ public class BbsDAO {
 					bbs.setRe_step(rs.getInt(11));
 					bbs.setRe_level(rs.getInt(12));
 					//좋아요, 싫어요 추가
-					bbs.setGood(rs.getInt(13));
-					bbs.setBad(rs.getInt(14));
-                   
+				
 					//리스트에 추가
 					bbslist.add(bbs);
 				}

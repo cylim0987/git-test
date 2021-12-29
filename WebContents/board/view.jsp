@@ -74,7 +74,10 @@ function confirmDelete(num,pageNum,items,text){
 
         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">삭제
         </button>
-             <input type="submit" class="btn btn-success" value="수정">
+           <!-- 
+           
+              <input type="submit" class="btn btn-success" value="수정">
+            -->
             </c:if>
             
             
